@@ -15,7 +15,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //using routers
-app.use(animalsRouter);
+app.use("/api", animalsRouter);
 
 
 const PORT: string | number = process.env.PORT || 3005;
